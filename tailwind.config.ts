@@ -42,8 +42,9 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Inter', 'Roboto', 'Noto Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', 'Arial', 'Apple Color Emoji', 'Segoe UI Emoji'],
-        serif: ['ui-serif', 'Source Serif 4', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+        // Prefer Inter for a professional UI look; fallback to system
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', 'Arial', 'Apple Color Emoji', 'Segoe UI Emoji'],
+        serif: ['Source Serif 4', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
       },
       borderRadius: {
         sm: '6px',
