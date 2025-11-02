@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base: Enterprise Legal style */
+@layer base {
+  html { @apply bg-bg-canvas text-fg-primary antialiased; }
+  body { @apply bg-bg-canvas text-fg-primary; }
+  h1 { @apply font-serif font-semibold text-[2.25rem] leading-[1.2]; }
+  h2 { @apply font-serif font-semibold text-[1.75rem] leading-[1.3]; }
+  h3 { @apply font-serif font-semibold text-[1.375rem] leading-[1.35]; }
+  p, li, input, textarea, button { @apply font-sans text-[1rem] leading-[1.6]; }
+  small, .text-small { @apply text-[0.875rem]; }
+}
+
+/* Diff token markup rendering */
+@layer components {
+  .diff-add { @apply bg-diff-add-bg text-diff-add px-0.5 rounded-sm; }
+  .diff-del { @apply bg-diff-del-bg text-diff-del line-through px-0.5 rounded-sm; }
+  .diff-mod { @apply underline decoration-dotted decoration-diff-mod; }
+  .pill { @apply inline-flex items-center px-2 py-0.5 rounded-sm text-[12px] font-medium; }
+  .pill-add { @apply text-diff-add bg-diff-add-bg; }
+  .pill-del { @apply text-diff-del bg-diff-del-bg; }
+  .pill-mod { @apply text-diff-mod bg-diff-mod-bg; }
+  .btn-primary { @apply bg-accent text-white rounded-md shadow-elev-1 hover:opacity-90 transition; }
+  .btn-ghost { @apply border border-line bg-bg-surface rounded-md hover:bg-white transition; }
+  .field { @apply border border-line bg-bg-surface rounded-md; }
+  .paper-texture { background-image:
+      linear-gradient(rgba(255,255,255,0.96), rgba(255,255,255,0.96)),
+      repeating-linear-gradient(0deg, rgba(12,19,33,0.02), rgba(12,19,33,0.02) 1px, transparent 1px, transparent 12px);
+    background-size: auto, auto; }
+  .legal-stripes { background-image:
+      repeating-linear-gradient(90deg, rgba(12,19,33,0.03) 0, rgba(12,19,33,0.03) 1px, transparent 1px, transparent 24px); }
+  .card-surface { @apply bg-bg-surface border border-line rounded-lg shadow-elev-2; }
+  .fade-up { animation: fadeUp 220ms both; }
+  .fade-up-delayed-1 { animation: fadeUp 220ms both 60ms; }
+  .fade-up-delayed-2 { animation: fadeUp 220ms both 120ms; }
+  .fade-up-delayed-3 { animation: fadeUp 220ms both 180ms; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

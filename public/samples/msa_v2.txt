@@ -1,0 +1,11 @@
+Master Services Agreement (MSA) v2
+
+1. Data Retention
+Provider retains standard records for 90 days, except where a legal hold applies.
+
+2. Indemnification
+Provider shall indemnify and hold harmless Client up to $50,000.
+
+3. Governing Law
+This Agreement is governed by the laws of Delaware.
+

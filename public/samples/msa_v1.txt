@@ -1,0 +1,11 @@
+Master Services Agreement (MSA) v1
+
+1. Data Retention
+Provider retains standard records for 90 days.
+
+2. Indemnification
+Provider shall indemnify Client for direct damages up to $100,000.
+
+3. Governing Law
+This Agreement is governed by the laws of New York.
+
